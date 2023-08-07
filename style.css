@@ -166,6 +166,7 @@ h4{
   }
   #slide3{
     padding-top: 30%;
+    height: 500px;
   }
   #slide2{
     width: 100%;
@@ -173,5 +174,11 @@ h4{
   }
   p{
     top: 15%;
+  }
+}
+
+@media (max-width: 400px){
+  #slide1, #slide2, #slide3, #slide4{
+    width: 110%;
   }
 }
