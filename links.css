@@ -1,0 +1,22 @@
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+
+    height: 540px;
+}
+
+.links a {
+    font-size: larger;
+    margin: auto;
+
+    padding: 3px;
+    border: black solid 2px;
+    border-radius: 3px;
+}
+
+.links a:hover {
+    color: aliceblue;
+    background-color: rgb(34, 107, 216);
+}
