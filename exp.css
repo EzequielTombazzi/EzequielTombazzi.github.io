@@ -1,4 +1,4 @@
-.exp h1 {
+/* .exp h1 {
     position: absolute;
     bottom: 0;
     top: 50%;
@@ -12,7 +12,36 @@
     height: 20%;
     text-align: center;
 }
+*/
 
-.exp img {
-    height: 100%;
+.div1 a {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 40%;
+  height: 100%;
+}
+
+.exp {
+  background-image: url("public/banner l4d2.png");
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 300px; /* Ajusta la altura del div según lo que necesites */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Cambia el color de texto si es necesario */
+  text-align: center;
+
+  width: 40%;
+  border-radius: 3px;
+  border: 4px solid grey;
+  margin: auto;
+  padding: 1.5%;
+}
+
+.exp h1 {
+  background-color: rgba(0, 0, 0, 0.5);
 }

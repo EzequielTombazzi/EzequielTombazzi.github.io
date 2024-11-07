@@ -1,61 +1,70 @@
 /* Oculta todos los divs y solo muestra el seleccionado */
 .content {
-    display: none;
+  display: none;
 }
 
 .active {
-    display: block;
+  display: block;
 }
 
 /* Estilos TODA LA PAGINA*/
 body {
-    font-family: sans-serif;
-    margin: 0;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* MENU */
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding-left: 5%;
-    padding-right: 5%;
-
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .menu nav a {
-    font-size: large;
-    margin-right: 10px;
+  font-size: large;
+  margin-right: 10px;
 }
 
 .menu nav a:hover {
-    text-decoration: underline ;
+  text-decoration: underline;
+}
+
+#div1 h2,
+#div3 h2 {
+  text-align: center;
+}
+
+#div0 h2 {
+  display: none;
 }
 
 /* BOTONES */
 .Anterior {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    cursor: pointer;
-    height: 100px; /*QUEDA MAL POSICIONADO CON ESTO*/
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  height: 100px; /*QUEDA MAL POSICIONADO CON ESTO*/
+  width: 50px;
 }
 
 .Siguiente {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    cursor: pointer;
-    height: 100px; /*QUEDA MAL POSICIONADO CON ESTO*/
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  height: 100px; /*QUEDA MAL POSICIONADO CON ESTO*/
+  width: 50px;
 }

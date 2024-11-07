@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="banner.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="exp.css">
-    <link rel="stylesheet" href="links.css">
-    <link rel="stylesheet" href="movile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="banner.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="exp.css" />
+    <link rel="stylesheet" href="links.css" />
+    <link rel="stylesheet" href="movile.css" />
     <title>Navegación entre Divs</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="menu">
-        <h2>Ezequiel Tombazzi Colman</h2>
-        <nav>
-            <a href="#" onclick="showDiv(0)">Inicio</a>
-            <a href="#" onclick="showDiv(1)">Experiencia</a>
-            <a href="#" onclick="showDiv(2)">Conocimiento</a>
-            <a href="#" onclick="showDiv(3)">Contato</a>
-        </nav>
+      <h2>Ezequiel Tombazzi Colman</h2>
+      <nav>
+        <a href="#" onclick="showDiv(0)">Inicio</a>
+        <a href="#" onclick="showDiv(1)">Experiencia</a>
+        <a href="#" onclick="showDiv(2)">Conocimiento</a>
+        <a href="#" onclick="showDiv(3)">Contacto</a>
+      </nav>
     </div>
     <button class="hambur" aria-label="Abrir menu">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </button>
 
     <!-- INICIO -->
     <div id="div0" class="content active">
-        <div class="banner">
-            <h1>Quiero trabajar en tu empresa</h1>
-            <div>
-                <img src="public/perfil_fondo.jpeg" alt="" />
-            </div>
+      <h2>Ezequiel Tombazzi Colman</h2>
+      <div class="banner">
+        <h1>Quiero trabajar en tu empresa</h1>
+        <div>
+          <img src="public/perfil_fondo.jpeg" alt="" />
         </div>
+      </div>
     </div>
 
     <!-- EXPERIENCIA -->
     <div id="div1" class="content">
-        <a href="https://left4dead2players.netlify.app" target="_blank" rel="noopener noreferrer">
-            <div class="exp">
-                <img src="public/banner l4d2.png" alt="">
-                <h1>pagina que cree comunicandome con la API de Steam</h1>
-            </div>
-        </a>
+      <h2>Experiencia:</h2>
+      <a
+        href="https://left4dead2players.netlify.app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="exp">
+          <!-- <img src="public/banner l4d2.png" alt="" /> -->
+          <h1>pagina que cree comunicandome con la API de Steam</h1>
+        </div>
+      </a>
     </div>
 
     <!-- CONOCIMIENTO -->
     <div id="div2" class="content">
-        <div class="conocimientos">
-            <h3>Conocimientos sólidos</h3>
-            <div class="grid-container">
-                <div><img src="public/html.png" alt="HTML"></div>
-                <div><img src="public/css.png" alt="CSS"></div>
-                <div><img src="public/js.png" alt="JavaScript"></div>
-                <div><img src="public/react.png" alt="React"></div>
-                <div><img src="public/php.png" alt="PHP"></div>
-                <div><img src="public/mysql.png" alt="SQL"></div>
-            </div>
-
-            <h3>En proceso</h3>
-            <div class="proceso">
-                <div><img src="public/laravel.png" alt=""></div>
-                <div><img src="public/plsql.png" alt=""></div>
-                <div><img src="public/bootstrap.png" alt=""></div>
-            </div>
+      <div class="conocimientos">
+        <h3>Conocimientos sólidos</h3>
+        <div class="grid-container">
+          <div><img src="public/html.png" alt="HTML" /></div>
+          <div><img src="public/css.png" alt="CSS" /></div>
+          <div><img src="public/js.png" alt="JavaScript" /></div>
+          <div><img src="public/react.png" alt="React" /></div>
+          <div><img src="public/php.png" alt="PHP" /></div>
+          <div><img src="public/mysql.png" alt="SQL" /></div>
         </div>
+
+        <h3>En proceso</h3>
+        <div class="proceso">
+          <div><img src="public/laravel.png" alt="" /></div>
+          <div><img src="public/plsql.png" alt="" /></div>
+          <div><img src="public/bootstrap.png" alt="" /></div>
+        </div>
+      </div>
     </div>
 
     <!-- CONTACTO -->
     <div id="div3" class="content">
-        <div class="links">
-            <a href="mailto:tombazziezequiel@gmail.com">Mandame un mail</a>
-            <a href="https://www.linkedin.com/in/ezequiel-tombazzi-colman/" target="_blank">Visita mi LinkedIn</a>
-            <a href="https://github.com/EzequielTombazzi" target="_blank">Visita mi GitHub</a>
-        </div>
+      <h2>Contacto:</h2>
+      <div class="links">
+        <a href="mailto:tombazziezequiel@gmail.com">Mandame un mail</a>
+        <a
+          href="https://www.linkedin.com/in/ezequiel-tombazzi-colman/"
+          target="_blank"
+          >Visita mi LinkedIn</a
+        >
+        <a href="https://github.com/EzequielTombazzi" target="_blank"
+          >Visita mi GitHub</a
+        >
+      </div>
     </div>
 
     <button class="Anterior" onclick="prevDiv()">◀</button>
     <button class="Siguiente" onclick="nextDiv()">▶</button>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
