@@ -1,16 +1,15 @@
 .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 7%;
-    padding-right: 7%;
-  }
-  
-  
-  .banner div {
-    max-width: 450px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.banner div {
+  max-width: 450px;
+}
 
 .banner h1 {
   font-size: 50px;
-}  
+}

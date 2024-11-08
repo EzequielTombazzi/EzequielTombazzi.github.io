@@ -1,8 +1,11 @@
 .conocimientos {
   text-align: center;
   margin: auto;
-  width: 40%;
-  height: 80%;
+
+  box-sizing: border-box;
+
+  width: 33%;
+  height: 70%;
 }
 
 .grid-container {
