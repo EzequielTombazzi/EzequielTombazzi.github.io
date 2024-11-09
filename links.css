@@ -1,22 +1,55 @@
+#div3 h2 {
+  padding-top: 1%;
+}
+
 .links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 400px;
+  /* height: 400px; */
+  gap: 1rem;
 }
 
-.links a {
-  font-size: larger;
-  margin: auto;
-
-  padding: 3px;
-  border: black solid 2px;
-  border-radius: 3px;
+.link {
+  min-width: 130px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(34, 107, 216);
+  background: rgb(34, 107, 216);
 }
 
-.links a:hover {
+.link:hover {
+  background: #fff;
+  color: rgb(34, 107, 216)
+}
+
+/* PARA LOS ICONOS  */
+
+.link {
+  display: inline-flex; /* Alinea el ícono y el texto en línea */
+  align-items: center; /* Centra verticalmente el ícono y el texto */
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.links a:last-child:hover{
   color: aliceblue;
-  background-color: rgb(34, 107, 216);
+  background-color: black;
+  border: 2px solid black;
+}
+
+.links a:last-child:hover img {
+  filter: invert(1);
 }

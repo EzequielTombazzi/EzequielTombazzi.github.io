@@ -14,6 +14,7 @@
 .menu nav {
   display: flex;
   flex-direction: row; /* Fila como predeterminado */
+
 }
 
 .menu nav a {
@@ -78,6 +79,8 @@
   .menu nav {
     display: flex;
     flex-direction: column;
+
+    gap: 0;
   }
   .menu nav a {
     border: 1px solid black;
@@ -92,15 +95,11 @@
   }
 
   .banner h1 {
-    margin-top: 50%;
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
   #div0 h2 {
-    margin: 0%;
-    margin-bottom: 5%;
-    margin-top: 15px;
     display: block;
   }
 
@@ -122,10 +121,7 @@
   /* LINKS */
   .links {
     height: 70%;
-  }
-
-  .links a {
-    margin: 20px;
+    gap: 3rem;
   }
 
   .Anterior {

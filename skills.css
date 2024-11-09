@@ -2,10 +2,14 @@
   text-align: center;
   margin: auto;
 
-  box-sizing: border-box;
-
+ 
   width: 33%;
   height: 70%;
+
+}
+
+.conocimientos h3 {
+  margin: 0;
 }
 
 .grid-container {
@@ -16,15 +20,69 @@
   border-radius: 4px;
   padding: 9px;
   transition: all 1s ease;
+
+
 }
 
 .grid-container div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* Puedes añadir un color de fondo si lo deseas */
   padding: 10px; /* Puedes ajustar el padding si es necesario */
+
+  position: relative;
+  /* width: 250px; */
+  transition: all .3s ease;
 }
+
+.grid-container div:hover {
+  transform: 
+  perspective(250px)
+  rotateX(10deg)
+  translateY(-5%)
+  translate(0)
+  ;
+}
+
+.grid-container div::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+  background-image:
+  linear-gradient(to bottom,
+  transparent 10%,
+  rgba(0,0,0,0.5)50%,
+  rgba(0,0,0)95%);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.grid-container div:hover:before {
+  opacity: 1;
+}
+
+.grid-container div div {
+  position: absolute;
+  width: 85%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* transform: translateY(25%); */
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.grid-container div:hover div {
+  opacity: 1;
+  /* transform: rotateY(10%); */
+  color: aliceblue;
+  font-size: large;
+}
+
 
 .grid-container img {
   max-width: 100%;
@@ -35,11 +93,10 @@
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
+
+
 }
 
-.grid-container div:hover {
-  transform: perspective(250px) scale(0.9);
-}
 
 .proceso {
   display: grid;
@@ -49,14 +106,17 @@
   border-radius: 4px;
   padding: 9px;
   transition: all 1s ease;
+
+
 }
 
 .proceso div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* Puedes añadir un color de fondo si lo deseas */
   padding: 10px; /* Puedes ajustar el padding si es necesario */
+
+
 }
 
 .proceso img {
@@ -68,6 +128,8 @@
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
+
+
 }
 
 .proceso div:hover {

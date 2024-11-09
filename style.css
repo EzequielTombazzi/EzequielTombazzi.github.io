@@ -11,6 +11,8 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 a {
@@ -22,10 +24,14 @@ img {
   max-width: 100%;
 }
 
+#div0 h2{
+  padding-left: 0.5rem;
+}
+
 /* MENU */
 
 .menu-container {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
 }
 
@@ -45,6 +51,8 @@ img {
 
 .menu nav a {
   font-size: large;
+  transition: all 0.3s;
+  
 }
 
 .menu nav a:hover {
@@ -73,18 +81,20 @@ img {
   padding: 75px 25px 75px 25px;
   background-color: aliceblue;
   border: 4px solid rgb(34, 107, 216);
-  border-radius: 2rem;
   color: rgb(34, 107, 216);
+  border-radius: 2rem;
   font-size: larger;
+
+  transition: all 0.6s;
 }
 
-.Siguiente {
+.Siguiente{
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* top: 50%; */
   right: 0;
   cursor: pointer;
-
+  
   /* HACER UNA CLASE PARA QUE NO SE REPITA  */
   padding: 75px 25px 75px 25px;
   background-color: aliceblue;
@@ -92,4 +102,12 @@ img {
   border-radius: 2rem;
   color: rgb(34, 107, 216);
   font-size: larger;
+  transition: all 0.6s;
+}
+
+.boton:hover {
+  border: 4px solid rgb(23, 74, 150);
+  color: rgb(23, 74, 150);
+  background-color: rgb(200, 229, 255);
+  
 }

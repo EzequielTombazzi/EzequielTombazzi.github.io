@@ -8,6 +8,16 @@
 
 .banner div {
   max-width: 450px;
+  transition: all 3s;
+}
+
+.banner div img {
+  mask-image: linear-gradient(black 70%,transparent);
+  transition: all 3s;
+}
+
+.banner div img:hover {
+  mask-image: linear-gradient(black 55%,transparent);
 }
 
 .banner h1 {
