@@ -93,8 +93,6 @@
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
-
-
 }
 
 
@@ -134,4 +132,75 @@
 
 .proceso div:hover {
   transform: perspective(250px) scale(0.9);
+}
+
+.proceso div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Puedes ajustar el padding si es necesario */
+
+  position: relative;
+  /* width: 250px; */
+  transition: all .3s ease;
+}
+
+.proceso div:hover {
+  transform: 
+  perspective(250px)
+  rotateX(10deg)
+  translateY(-5%)
+  translate(0)
+  ;
+}
+
+.proceso div::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+  background-image:
+  linear-gradient(to bottom,
+  transparent 10%,
+  rgba(0,0,0,0.5)50%,
+  rgba(0,0,0)95%);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.proceso div:hover:before {
+  opacity: 1;
+}
+
+.proceso div div {
+  position: absolute;
+  width: 85%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* transform: translateY(25%); */
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.proceso div:hover div {
+  opacity: 1;
+  /* transform: rotateY(10%); */
+  color: aliceblue;
+  font-size: large;
+}
+
+
+.proceso img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
 }
