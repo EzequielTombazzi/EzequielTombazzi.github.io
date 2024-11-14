@@ -2,24 +2,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   padding-left: 7%;
   padding-right: 7%;
 }
 
 .banner div {
-  max-width: 450px;
-  transition: all 3s;
+  max-height: 100vh;
+  box-sizing: border-box;
 }
 
-.banner div img {
-  mask-image: linear-gradient(black 70%,transparent);
-  transition: all 3s;
+.container {
+  max-width: 100vw; /* Limita el ancho máximo al ancho de la ventana */
+  max-height: 100vh; /* Limita el alto máximo al alto de la ventana */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
 }
 
-.banner div img:hover {
-  mask-image: linear-gradient(black 55%,transparent);
+svg, .overlay-image {
+  max-width: 100%; /* Ajusta al ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  mask-image: linear-gradient(black 85%,transparent);
+  transition: all 3s;
+  box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
 }
+
 
 .banner h1 {
   font-size: 50px;
+  margin: 0%;
 }
+
+/* Define una animación para mover el SVG */
+@keyframes moveIn {
+  from {
+      transform: translateX(-100vw); /* Empieza desde fuera de la pantalla (a la izquierda) */
+      opacity: 0; /* Opcional: empieza invisible */
+  }
+  to {
+      transform: translateX(0); /* Llega a la posición original */
+      opacity: 1; /* Se vuelve completamente visible */
+  }
+}
+
+/* Define una animación para la imagen */
+@keyframes moveInImage {
+  from {
+      transform: translateY(100vh); /* Empieza desde abajo */
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Aplica la animación en los elementos al cargar la página */
+svg {
+  animation: moveIn 1s ease-out forwards; /* 1 segundo de duración */
+}
+
+image {
+  animation: moveInImage 1s ease-out forwards;
+}
+

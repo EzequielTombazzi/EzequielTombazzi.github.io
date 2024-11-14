@@ -24,6 +24,8 @@
         <a href="#" onclick="showDiv(1)">Experiencia</a>
         <a href="#" onclick="showDiv(2)">Conocimiento</a>
         <a href="#" onclick="showDiv(3)">Contacto</a>
+        <a href="Curriculum/Tombazzi Colman Ezequiel Cv.pdf" download="Curriculum Tombazzi Ezequiel"
+          target="_blank">Descarga mi Cv</a>
       </nav>
     </div>
   </div>
@@ -38,57 +40,80 @@
     <h2>Ezequiel Tombazzi Colman</h2>
     <div class="banner">
       <h1>Quiero trabajar en tu empresa</h1>
-      <div>
-        <img src="public/perfil_fondo.jpeg" alt="" />
+      <div class="container">
+
+        <svg width="454" height="509" viewBox="0 0 454 509" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g style="mix-blend-mode:color" filter="url(#filter0_d_7_8)">
+            <path
+              d="M432.448 192.406C457.994 227.141 455.198 276.87 427.038 309.158C347.89 399.912 270.94 450.415 143.777 496.125C98.2888 512.476 48.8543 486.414 34.1182 437.114C-6.51343 301.178 -6.13708 199.737 35.8746 63.3158C50.5151 15.7747 97.542 -10.0639 142.126 3.67758C283.45 47.2361 362.152 96.8229 432.448 192.406Z"
+              fill="#226BD8" />
+          </g>
+          <image href="public/ezequiel tombazzi.png" x="0" y="0" width="100%" height="100%" class="overlay-image" />
+          <defs>
+            <filter id="filter0_d_7_8" x="0" y="0" width="454" height="509" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7_8" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7_8" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+
       </div>
+
     </div>
   </div>
 
   <!-- EXPERIENCIA -->
   <div id="div1" class="content">
     <h2>Experiencia:</h2>
-    <a href="https://left4dead2players.netlify.app" target="_blank" rel="noopener noreferrer">
-      <div class="exp">
-        <!-- <img src="public/banner l4d2.png" alt="" /> -->
-        <h1>Página que programé comunicándome con la API de Steam</h1>
-      </div>
-    </a>
+    <div class="exp" onclick="window.open('https://left4dead2players.netlify.app', '_blank')">
+      <h1>Página que programé comunicándome con la API de Steam</h1>
+      <img class="web" src="public/Screenshot web.png" alt="Pagina Web" srcset="">
+    </div>
   </div>
+
 
   <!-- CONOCIMIENTO -->
   <div id="div2" class="content">
     <div class="conocimientos">
       <h3>Conocimientos sólidos:</h3>
       <div class="grid-container">
-        <div><img src="public/html.png" alt="HTML" />
+        <div class="text"><img src="public/html.png" alt="HTML" />
           <div>HTML</div>
         </div>
-        <div><img src="public/css.png" alt="CSS" />
+        <div class="text"><img src="public/css.png" alt="CSS" />
           <div>CSS</div>
         </div>
-        <div><img src="public/js.png" alt="JavaScript" />
-          <div>JAVASCRIPT</div>
+        <div class="text"><img src="public/js.png" alt="JavaScript" />
+          <div>JavaScript</div>
         </div>
-        <div><img src="public/react.png" alt="React" />
+        <div class="text"><img src="public/react.png" alt="React" />
           <div>REACT</div>
         </div>
-        <div><img src="public/php.png" alt="PHP" />
+        <div class="text"><img src="public/php.png" alt="PHP" />
           <div>PHP</div>
         </div>
-        <div><img src="public/mysql.png" alt="SQL" />
+        <div class="text"><img src="public/mysql.png" alt="SQL" />
           <div>MYSQL</div>
         </div>
       </div>
 
       <h3>En proceso:</h3>
       <div class="proceso">
-        <div><img src="public/laravel.png" alt="" />
-          <div>Laravel</div> 
+        <div class="text"><img src="public/laravel.png" alt="" />
+          <div>Laravel</div>
         </div>
-        <div><img src="public/plsql.png" alt="" />
+        <div class="text"><img src="public/plsql.png" alt="" />
           <div>PL/SQL</div>
         </div>
-        <div><img src="public/bootstrap.png" alt="" />
+        <div class="text"><img src="public/bootstrap.png" alt="" />
           <div>BootsTrap</div>
         </div>
       </div>
@@ -106,7 +131,10 @@
       <a href="https://github.com/EzequielTombazzi" class="link" target="_blank"><img src="public/github.png" />Visita
         mi
         GitHub</a>
+      <a href="Curriculum/Tombazzi Colman Ezequiel Cv.pdf" class="link" download="Curriculum Tombazzi Ezequiel"
+        target="_blank"><img src="public/cv.png" />Descarga mi Cv</a>
     </div>
+  </div>
   </div>
 
   <button class="Anterior boton" onclick="prevDiv()">◀</button>

@@ -1,12 +1,3 @@
-.div1 a {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40%;
-  height: 100%;
-}
-
 .exp {
   background-image: url("public/banner l4d2.png");
   background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
@@ -24,9 +15,48 @@
   border: 4px solid grey;
   margin: auto;
   padding: 1.5%;
+  cursor: pointer;
 }
 
 .exp h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.exp .web {
+  position: absolute;
+  opacity: 0; /* Oculta la imagen inicialmente */
+  transition: transform 1s ease; /* Transición suave para el cambio de opacidad */
+  transform: scale(0.8) translateY(20px); /* Inicia con un tamaño reducido y bajada */
+  transition: opacity 0.5s ease, transform 3.3s ease; /* Transición suave */
+  width: 65%;
+  height: auto;
+}
+
+.exp:hover .web {
+  opacity: 1;
+  transform: scale(1) translateY(0); /* La imagen aparece, se amplía y sube un poco */
+}
+
+.exp {
+  position: relative;
+  overflow: hidden; /* Asegura que el overlay se quede dentro del div */
+}
+
+.exp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+  transition: background-color 0.3s ease; /* Transición suave */
+  z-index: 0; /* Coloca la capa encima del fondo */
+}
+
+.exp:hover::before {
+  background-color: rgba(0, 0, 0, 0.6); /* Oscurece con transparencia en hover */
+}
+
+
 

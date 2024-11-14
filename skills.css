@@ -24,7 +24,7 @@
 
 }
 
-.grid-container div {
+.grid-container .text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
   transition: all .3s ease;
 }
 
-.grid-container div:hover {
+.grid-container .text:hover {
   transform: 
   perspective(250px)
   rotateX(10deg)
@@ -44,7 +44,7 @@
   ;
 }
 
-.grid-container div::before {
+.grid-container .text::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -60,11 +60,11 @@
   transition: all .3s ease;
 }
 
-.grid-container div:hover:before {
+.grid-container .text:hover:before {
   opacity: 1;
 }
 
-.grid-container div div {
+.grid-container .text div {
   position: absolute;
   width: 85%;
   bottom: 0;
@@ -76,7 +76,7 @@
   opacity: 0;
 }
 
-.grid-container div:hover div {
+.grid-container .text:hover div {
   opacity: 1;
   /* transform: rotateY(10%); */
   color: aliceblue;
@@ -108,7 +108,7 @@
 
 }
 
-.proceso div {
+.proceso .text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,11 +130,11 @@
 
 }
 
-.proceso div:hover {
+.proceso .text:hover {
   transform: perspective(250px) scale(0.9);
 }
 
-.proceso div {
+.proceso .text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,7 @@
   transition: all .3s ease;
 }
 
-.proceso div:hover {
+.proceso .text:hover {
   transform: 
   perspective(250px)
   rotateX(10deg)
@@ -154,7 +154,7 @@
   ;
 }
 
-.proceso div::before {
+.proceso .text::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -170,11 +170,11 @@
   transition: all .3s ease;
 }
 
-.proceso div:hover:before {
+.proceso .text:hover:before {
   opacity: 1;
 }
 
-.proceso div div {
+.proceso .text div {
   position: absolute;
   width: 85%;
   bottom: 0;
@@ -186,11 +186,11 @@
   opacity: 0;
 }
 
-.proceso div:hover div {
+.proceso .text:hover div {
   opacity: 1;
   /* transform: rotateY(10%); */
   color: aliceblue;
-  font-size: large;
+  font-size: larger;
 }
 
 

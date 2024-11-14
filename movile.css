@@ -29,6 +29,10 @@
   color: aliceblue;
 }
 
+.menu-container .menu nav a:last-child:hover {
+  background-color: rgb(216, 34, 34);
+}
+
 .hambur {
   display: flex;
   flex-direction: column;
@@ -87,9 +91,9 @@
   }
 
   /* BANNER FOTO MIA*/
-  .banner div img {
+  .banner .container svg {
     position: absolute;
-    top: 20%;
+    top: 29%;
     left: 0%;
     z-index: -1;
   }
@@ -97,11 +101,12 @@
   .banner h1 {
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 50%;
+    margin-top: 67%;
   }
 
   #div0 h2 {
     display: block;
+    margin: 0%;
   }
 
   /* TEXTO DE LA EXPERIENCIA */
@@ -122,7 +127,12 @@
   /* LINKS */
   .links {
     height: 70%;
-    gap: 3rem;
+    gap: 2rem;
+  }
+
+  #div3 h2 {
+    margin: 0%;
+    padding-bottom: 5%;
   }
 
   .Anterior {
