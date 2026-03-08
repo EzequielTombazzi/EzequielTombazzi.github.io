@@ -1,0 +1,36 @@
+/* Estado inicial: oculto y un poquito hacia abajo */
+.content {
+  display: none; /* Mantén el display none para que no ocupen espacio */
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: all 0.5s ease-out; /* Esta es la magia */
+}
+
+/* Estado cuando está activo */
+.content.active {
+  display: block; /* O 'flex' según uses en tu diseño */
+  opacity: 1;
+  transform: translateY(0);
+  /* Creamos una animación de entrada */
+  animation: aparecer 0.6s ease-out forwards;
+}
+
+/* Definimos la animación */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Los hijos del div activo aparecen con un ligero retraso */
+/* .content.active h2, 
+.content.active .grid-container {
+  animation: aparecer 0.8s ease-out forwards;
+  animation-delay: 0.2s; /* Aparecen un poquito después */
+  /*opacity: 0; /* Empiezan invisibles */
+/* }  */

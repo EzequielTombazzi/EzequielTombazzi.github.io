@@ -25,12 +25,12 @@
 }
 
 .menu nav a:hover {
-  background-color: rgb(34, 107, 216);
-  color: aliceblue;
+  /* background-color: rgb(34, 107, 216); */
+  /* color: aliceblue; */
 }
 
 .menu-container .menu nav a:last-child:hover {
-  background-color: rgb(216, 34, 34);
+  /* background-color: rgb(216, 34, 34); */
 }
 
 .hambur {
