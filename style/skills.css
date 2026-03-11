@@ -4,8 +4,7 @@
   margin: 0 auto 100px auto;
   margin-bottom: 100px;
  
-  width: 33%;
-  /* height: 10%; */
+  width: 29%;
 }
 
 .conocimientos h3 {
@@ -20,8 +19,6 @@
   border-radius: 4px;
   padding: 9px;
   transition: all 1s ease;
-
-
 }
 
 .grid-container .text {
