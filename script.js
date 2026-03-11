@@ -1,4 +1,4 @@
-let currentDiv = 0;
+let currentDiv = null;
 
 function updateMenu(index) {
   const links = document.querySelectorAll("nav a");
@@ -30,25 +30,27 @@ function updateDots(index) {
 
 // 2. FUNCIÓN PARA MOSTRAR EL DIV SELECCIONADO
 function showDiv(index) {
+  // 2. Si ya estamos en esa página, no hacemos nada (pero solo si no es la primera carga)
+  if (index === currentDiv) {
+    return; 
+  }
+
   const divs = document.querySelectorAll(".content");
   
-  // 1. Quitamos la clase active de todos
-  divs.forEach(div => {
-    div.classList.remove("active");
-    div.style.display = "none"; // Forzamos el cierre
-  });
+  // 3. Solo intentamos quitar "active" si ya hay una sección seleccionada
+  if (currentDiv !== null) {
+    divs[currentDiv].classList.remove("active");
+    divs[currentDiv].style.display = "none";
+  }
 
-  // 2. Activamos el nuevo div
   const activeDiv = divs[index];
-  activeDiv.style.display = "block"; // Lo ponemos en el layout
+  activeDiv.style.display = "block";
   
-  // Usamos un pequeño delay (ms) para que el navegador procese el cambio 
-  // y la animación de CSS se dispare correctamente
   setTimeout(() => {
     activeDiv.classList.add("active");
   }, 10);
 
-  currentDiv = index;
+  currentDiv = index; 
   updateDots(index);
   updateMenu(index);
 }
@@ -111,6 +113,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Forzamos el estado inicial
   showDiv(0); 
 });

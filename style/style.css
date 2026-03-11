@@ -9,6 +9,7 @@
 
 /* Estilos TODA LA PAGINA*/
 body {
+  overflow: hidden;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -113,15 +114,17 @@ nav a.active-link { /* Agregamos esta clase aquí */
 
 /* Estilo base para ambos botones */
 .boton {
-  position: fixed; /* O absolute, depende de tu layout */
-  top: 50%;
+  position: fixed; 
+  top: 55%;
   transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
   padding: 15px; /* Área de clic */
+  padding-bottom: 220px;
+  padding-top: 220px;
   z-index: 100;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   outline: none; /* Quita el borde por defecto al hacer clic */
 }
 
@@ -134,89 +137,45 @@ nav a.active-link { /* Agregamos esta clase aquí */
   /* Grosor y color de la línea */
   border-top: 3px solid #226BD8; 
   border-right: 3px solid #226BD8;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 /* Posicionamiento específico */
 .Anterior {
-  left: 20px;
+  left: 5px;
 }
 .Anterior::before {
-  /* Rotar para que apunte a la izquierda */
+  /* Rotar para la izquierda */
   transform: rotate(-135deg); 
 }
 
 .Siguiente {
-  right: 20px;
+  right: 5px;
 }
 .Siguiente::before {
-  /* Rotar para que apunte a la derecha */
+  /* Rotar para la derecha */
   transform: rotate(45deg);
 }
 
-/* --- EFECTO HOVER: Sombreado --- */
-.boton:hover {
-  /* Fondo suave y circular para el sombreado */
-  background-color: rgba(34, 107, 216, 0.1); 
-  border-radius: 50%; /* Hace el sombreado circular */
-  /* Opcional: una sombra de caja muy sutil */
-  box-shadow: 0 4px 15px rgba(34, 107, 216, 0.2);
+.Siguiente:hover{
+  right: 10px;
+}
+.Anterior:hover{
+  left: 10px;
 }
 
-.boton:hover::before {
-  /* Opcional: hacer la línea un poco más gruesa en hover */
-  border-top-width: 4px;
-  border-right-width: 4px;
+.boton.Anterior:hover {
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0) 
+  );
 }
 
-
-
-
-
-
-
-
-
-
-
-.Anterior {
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  cursor: pointer;
-  
-
-  padding: 75px 25px 75px 25px;
-  background-color: aliceblue;
-  border: 4px solid rgb(34, 107, 216);
-  color: rgb(34, 107, 216);
-  border-radius: 2rem;
-  font-size: larger;
-
-  transition: all 0.6s; */
-}
-
-.Siguiente{
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  cursor: pointer;
-  
-  
-  padding: 75px 25px 75px 25px;
-  background-color: aliceblue;
-  border: 4px solid rgb(34, 107, 216);
-  border-radius: 2rem;
-  color: rgb(34, 107, 216);
-  font-size: larger;
-  transition: all 0.6s; */
-}
-
-.boton:hover {
-  /* border: 4px solid rgb(23, 74, 150);
-  color: rgb(23, 74, 150);
-  background-color: rgb(200, 229, 255); */
-  
+.boton.Siguiente:hover {
+  background: linear-gradient(
+    to left,
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0)
+  );
 }

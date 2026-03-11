@@ -1,11 +1,11 @@
 .conocimientos {
   text-align: center;
-  margin: auto;
-
+  /* margin: auto; */
+  margin: 0 auto 100px auto;
+  margin-bottom: 100px;
  
   width: 33%;
-  height: 70%;
-
+  /* height: 10%; */
 }
 
 .conocimientos h3 {

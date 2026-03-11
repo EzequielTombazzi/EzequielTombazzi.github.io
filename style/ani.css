@@ -26,11 +26,3 @@
     transform: translateY(0);
   }
 }
-
-/* Los hijos del div activo aparecen con un ligero retraso */
-/* .content.active h2, 
-.content.active .grid-container {
-  animation: aparecer 0.8s ease-out forwards;
-  animation-delay: 0.2s; /* Aparecen un poquito después */
-  /*opacity: 0; /* Empiezan invisibles */
-/* }  */
