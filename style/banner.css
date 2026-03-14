@@ -3,13 +3,19 @@
   justify-content: space-between;
   align-items: center;
   
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 4%;
+  padding-right: 5%;
 }
 
 .banner div {
   max-height: 100vh;
   box-sizing: border-box;
+}
+
+.titulos h3{
+  margin: 0;
+  margin-left: 5%;
+  color: #226BD8;
 }
 
 .container {
