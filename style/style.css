@@ -1,4 +1,9 @@
 /* Oculta todos los divs y solo muestra el seleccionado */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .content {
   display: none;
 }
