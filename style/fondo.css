@@ -37,9 +37,46 @@
 
 /* Variamos la velocidad para que no bajen todas al mismo tiempo */
 .column:nth-child(1) { animation-duration: 8s; }
-.column:nth-child(2) { animation-duration: 6s; animation-delay: 2s; }
-.column:nth-child(3) { animation-duration: 7s; animation-delay: 3s; }
+.column:nth-child(2) { animation-duration: 6s; animation-delay: 1s; }
+.column:nth-child(3) { animation-duration: 7s; animation-delay: 2s; }
 .column:nth-child(4) { animation-duration: 9s; }
 .column:nth-child(5) { animation-duration: 6.5s; animation-delay: 1.5s; }
 
 /* FONDO EXPERIENCIA */
+.code-container {
+    position: absolute;
+    /* background-color: #eeeeee; Fondo oscuro tipo VS Code */
+    color: #333;
+    /* text-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); */
+    text-shadow: 0 0 10px rgba(17, 0, 255, 0.6);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding-left: 7%;
+    
+    font-family: 'Fira Code', 'Consolas', monospace;
+    /* border: 1px solid #333; */
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.5); */
+
+    font-size: 1rem;       /* Esto es un 25% más grande que el estándar */
+    line-height: 1.2;         /* Un poco más de espacio para que sea fácil de leer */
+    letter-spacing: 0.3px;  /* Espaciado entre caracteres para mejorar la legibilidad */
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent; /* Sin fondo para que se vea el fondo del contenedor */
+}
+
+.var, .kwd {
+    font-size: 1.1em;         /* Agranda ligeramente más las palabras clave y variables */
+}
+
+.kwd { color: #226BD8; font-weight: bold; } /* Tu azul para palabras clave */
+.var { color: #226BD8; }                     /* Un azul purpúreo para variables */
+.str { color: #226BD8; }                     /* Naranja (complementario del azul) para strings */
+.num { color: #226BD8; }                     /* Verde esmeralda para números */
+.fun { color: #226BD8; }                     /* Morado para funciones */
+.punc { color: #226BD8; }                    /* Gris oscuro para puntuación (brackets) */
