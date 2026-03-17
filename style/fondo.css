@@ -20,7 +20,7 @@
 
 .column {
   color: #226BD8; /* Verde Matrix */
-  text-shadow: 0 0 5px #226BD8;
+  text-shadow: 0 0 10px #226BD8;
   writing-mode: vertical-rl; /* Pone el texto en vertical */
   text-orientation: upright;
   transform: translateY(-109%); /* Empieza fuera de la pantalla arriba */
@@ -45,9 +45,7 @@
 /* FONDO EXPERIENCIA */
 .code-container {
     position: absolute;
-    /* background-color: #eeeeee; Fondo oscuro tipo VS Code */
     color: #333;
-    /* text-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); */
     text-shadow: 0 0 10px rgba(17, 0, 255, 0.6);
     margin: 0;
     padding: 0;

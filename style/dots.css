@@ -10,7 +10,7 @@
   cursor: pointer;
   height: 12px;
   width: 12px;
-  margin: 0 6px;
+  margin: 0 8px;
   background-color: #bbb; /* Color de punto inactivo */
   border-radius: 50%;
   display: inline-block;
