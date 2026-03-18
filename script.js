@@ -67,13 +67,14 @@ function prevDiv() {
   showDiv(prevIndex);
 }
 
-// --- RESTO DE TU CÓDIGO (Menú y Swipes) ---
+// --- RESTO DE CÓDIGO (Menú y Swipes) ---
 
 const hambur = document.getElementsByClassName("hambur")[0];
 const menu = document.getElementsByClassName("menu")[0];
 
 hambur.addEventListener("click", () => {
   menu.classList.toggle("menu--show");
+  hambur.classList.toggle('is-open');
 });
 
 let startX;

@@ -48,17 +48,17 @@
   transform-origin: left;
 }
 
-/* Transición al hacer hover */
-.hambur:hover div:first-child {
-  transform: rotate(45deg);
+/* Transición al hacer click */
+.hambur.is-open div:first-child {
+  transform: rotate(45deg) 
 }
 
-.hambur:hover div:nth-child(2) {
+.hambur.is-open div:nth-child(2) {
   opacity: 0;
 }
 
-.hambur:hover div:last-child {
-  transform: rotate(-45deg);
+.hambur.is-open div:last-child {
+  transform: rotate(-45deg) 
 }
 
 /* AJUSTES PARA PANTALLAS MÓVILES */
@@ -141,6 +141,31 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-y: auto;
+    padding-bottom: 0;
+  }
+
+  /* FONDO MATRIX  */
+  .matrix-container {
+    overflow: hidden;
+    top:-25%;
+  }
+
+  .code-container {
+    overflow: hidden;
+
+    padding-left: 1%;
+    
+    font-family: 'Fira Code', 'Consolas', monospace;
+    /* border: 1px solid #333; */
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.5); */
+
+    font-size: 1rem;       /* Esto es un 25% más grande que el estándar */
+    line-height: 1.0;         /* Un poco más de espacio para que sea fácil de leer */
+    letter-spacing: 0.3px;  /* Espaciado entre caracteres para mejorar la legibilidad */
+  }
+
   /* SKILLS */
   .conocimientos {
     width: 85%;
