@@ -146,6 +146,11 @@
     padding-bottom: 0;
   }
 
+  /* titulo exp */
+  .content h2{
+    margin: 0;
+  }
+
   /* FONDO MATRIX  */
   .matrix-container {
     overflow: hidden;
@@ -193,5 +198,19 @@
 
   .code-container {
     top: 99%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner h1 {
+    font-size: 30px;
+  }
+  .matrix-container {
+    top: -33%;
+  }
+
+  .code-container {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
   }
 }
