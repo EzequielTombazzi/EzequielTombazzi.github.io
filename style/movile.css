@@ -138,6 +138,10 @@
   .hambur {
     display: none;
   }
+
+  .dots-container {
+    bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -206,11 +210,36 @@
     font-size: 30px;
   }
   .matrix-container {
-    top: -33%;
+    top: -32%;
   }
 
   .code-container {
     font-size: 0.7rem;
     line-height: 0.7rem;
   }
+}
+
+@media screen and (max-height: 750px) and (max-width: 768px) {
+  .menu {
+    padding: 0;
+    padding-top: 2px;
+  }
+  .menu nav a {
+    font-size: small;
+  }  
+
+  .dots-container {
+    bottom: 15px;
+  }
+
+  .matrix-container {
+        top: -24%;
+  }
+}
+
+@media screen and (max-height: 700px) and (max-width: 768px) {
+  .banner h1 {
+        margin-top: 83%;
+        padding-bottom: 0;
+    }
 }
