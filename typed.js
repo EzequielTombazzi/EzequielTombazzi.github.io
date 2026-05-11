@@ -6,7 +6,7 @@ var typed = new Typed('#typed-code', {
     `<span class="kwd">const</span> <span class="var">experiencia</span> = <span class="punc">{</span><br>^300` +
     `  <span class="var">rol</span>: <span class="str">"Web Developer"</span><span class="punc">,</span><br>^300` +
     `  <span class="var">pagina</span>: <span class="str">"https://left4dead2players.netlify.app/"</span><span class="punc">,</span><br>^300` +
-    `  <span class="var">tecnologias</span>: <span class="punc">[</span><span class="str">"JavaScript"</span><span class="punc">,</span> <span class="str">"CSS"</span><span class="punc">,</span> <span class="str">"Git"</span><span class="punc">]</span><br>^300` +
+    `  <span class="var">tecnologias</span>: <span class="punc">[</span><span class="str">"TypeScript"</span><span class="punc">,</span> <span class="str">"React"</span><span class="punc">,</span> <span class="str">"Git"</span><span class="punc">]</span><br>^300` +
     `<span class="punc">};</span><br><br>^500`+
 
     `<span class="kwd">const</span> <span class="var">programador</span> = <span class="punc">{</span><br>^300` +
